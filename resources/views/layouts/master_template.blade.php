@@ -85,24 +85,13 @@ scratch. This page gets rid of all links and provides the needed markup only.
             <div class="row">
               <div class="col-xs-12">
                 <h2 class="page-header">
-                  <i class="fa fa-globe"></i> AdminLTE, Inc.
-                  <small class="pull-right">Date: 2/10/2014</small>
+                  <i class="fa fa-globe"></i> {{!empty($titulo) ? $titulo : 'Página sem título'}}.
+                  <small class="pull-right">Date: {{date('d/m/Y')}}</small>
                 </h2>
               </div><!-- /.col -->
             </div>
             
-            <!-- info row -->
-            <div class="row invoice-info">
-              <div class="col-sm-12 invoice-col">
-                Informations block
-              </div><!-- /.col -->
-            </div><!-- /.row -->
-
-            <div class="row">
-              <div class="col-xs-12">
-                
-              </div><!-- /.col -->
-            </div><!-- /.row -->
+            @yield('content')
             
           </section>
         </section><!-- /.content -->

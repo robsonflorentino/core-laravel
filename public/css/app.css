@@ -4749,6 +4749,9 @@ fieldset[disabled] .btn-yahoo.active {
     white-space: normal!important;
   }
 }
+/*.logo {
+  background-color: #F9FAFC !important;
+}*/
 .dropdown-menu,
 .invoice {
   border: solid 1px #DDDDDD;

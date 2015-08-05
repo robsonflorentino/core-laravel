@@ -61,6 +61,9 @@ elixir(function(mix) {
         // AdminLTE IMG
         .copy(bowerDir + 'adminlte/dist/img', 'public/theme/img')
 
+        // AdminLTE Plugins
+        .copy(bowerDir + 'adminlte/plugins', 'public/theme/plugins')
+
         // AdminLTE JS
         .copy(bowerDir + 'adminlte/dist/js/app.js', 'public/theme/js/app.min.js')
 

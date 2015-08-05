@@ -11,6 +11,14 @@
 |
 */
 
-Route::get('/', function () {
-    return view('layouts/master_template');
+Route::group(['middleware' => 'auth'], function(){
+    // Route::get('', function(){});
+    Route::get('/', function(){
+        return view('layouts/master_template');
+    });
 });
+
+Route::controllers([
+    'auth' => 'Auth\AuthController',
+    'password' => 'Auth\PasswordController',
+]);
